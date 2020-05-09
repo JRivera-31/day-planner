@@ -6,5 +6,5 @@ The input is saved to local storage
 When the page is realoaded
 The input persists on the page so nothing is lost
 
-![project picture](/assets/projectpicture.png)
+![project picture](assets/projectpicture.png)
 
