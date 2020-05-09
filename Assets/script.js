@@ -1,4 +1,3 @@
-var currentDay = $("#currentDay")
 var reset
 var currentDateAndTime = Date(Date.now())// exp: Fri Oct 25 2019 17:40:56 GMT-0400 (Eastern Daylight Time)
 
@@ -6,27 +5,28 @@ var currentDateAndTime = Date(Date.now())// exp: Fri Oct 25 2019 17:40:56 GMT-04
 $(document).ready(function() {
     
     function updateHours() {
-       $(".time-block").each(function() {
-             var currentHour = new Date().getHours()//Current hour in military time
-            
-            if($(this) < currentHour) {
-                $(this).addClass(".past")
-            } else if ($(this) === currentHour) {
-                $(this).removeClass(".past")
-                $(this).addClass(".present")
-            } else {
-                $(this).removeClass(".past")
-                $(this).removeClass(".present")
-                $(this).addClass(".future")
-            }
-            console.log(this)
-        })
-        
+       for(var i=9; i < 18; i++) {
+        var currentHour = new Date().getHours();//Current hour in military time
+        var timeBlock = $("#hour" + i)
+
+        if(i < currentHour) {
+            timeBlock.addClass("past")
+        }  else if(i === currentHour) {
+            timeBlock.removeClass("past")
+            timeBlock.addClass("present")
+        } else {
+            timeBlock.removeClass("past")
+            timeBlock.removeClass("present")
+            timeBlock.addClass("future")
+        }
+    }
+    
     }
 updateHours()
+
 })
 
-// functin to update hours every 60 seconds
+// function to update hours every 60 seconds
 $(document).ready(function() {
     reset = setInterval("updateHours()", 60000)
 })
