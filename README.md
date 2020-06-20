@@ -1,10 +1,26 @@
+
 # Day Planner
-When the page is loaded
-The user can input events happening throughout the day in time blocks
-When the user clicks the save button next to the time block
-The input is saved to local storage
-When the page is realoaded
-The input persists on the page so nothing is lost
+![License Badge](https://img.shields.io/github/license/JRivera-31/day-planner?color=g&style=plastic")
 
-![project picture](assets/projectpicture.png)
+A simple day planner application that allows the user to schedule out their day. Current time blocks appear red, past time blocks are colored grey, and future time blocks are colored green. The input is also saved to local storage so that it is persistent on the page for the user.
 
+![Application Picture](./Assets/projectpicture.png)
+
+## Table of Contents
+-[Installation](#installation)
+
+-[Usage](#usage)
+
+-[Credits](#credits)
+
+## Installation:
+
+**How to install the project:** Clone the repository and open the application in your browser.
+
+## Usage:
+
+For people who want to keep track of their schedule during the day.
+
+## Credits:
+
+**Credits to contributors:** N/A
